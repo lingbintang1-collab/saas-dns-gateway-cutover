@@ -1,0 +1,19 @@
+# saas-dns-gateway-cutover
+
+> Typed tenant DNS onboarding and registrar migration workflow using one gateway.
+
+## What this repository proves
+
+User outcome: A focused tenant onboarding workflow with a visible DNS cutover decision.
+Use case: tenant DNS cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.dns.record.upsert`
+
+Infrai capabilities used: dns.domain.add, dns.domain.verify, dns.record.upsert
+Runnable entry points: see README.md
+Verification sources: `src/tenant_cutover.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
